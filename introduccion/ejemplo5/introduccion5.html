@@ -1,0 +1,22 @@
+<html>
+	<head>
+			<title>Introduccion 4</title>
+	</head>
+	<body>
+		<h1>Introduccion 4</h1>		
+		<p id="text">Clica para saber si el numero esta entre 0 y 10</p>
+		<input type="text" size="25" id="zenbakia"></input><button onClick="funtzioa()">Clica</button>
+		<script>
+			function funtzioa() {
+			var zen, text;
+			zen = document.getElementById("zenbakia").value;
+			if (zen>0 && zen<10) {
+				text = "El numero esta entre 0 y 10";}
+			else {
+				text = "Numero incorrecto";}
+			document.getElementById("eran").innerHTML = text;
+		}
+	</script>
+	<p id="eran"></p>
+	</body>
+</html>

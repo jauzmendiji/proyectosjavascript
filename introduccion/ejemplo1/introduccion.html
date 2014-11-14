@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Introduccion 1</h1>
+
+<p>El texto va a cambiar</p>
+
+<button type="button" onclick="funcionCambio()">Clica!</button>
+
+<p id="texto">Texto que va a cambiar</p>
+
+<script>
+function funcionCambio() { 
+    document.getElementById("texto").innerHTML = "Cambiado con JS";
+}
+</script>
+
+</body>
+</html>

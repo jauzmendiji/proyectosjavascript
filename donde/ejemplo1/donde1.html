@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Script en el body</title>
+	</head>
+<body>
+
+<h1>Script en el body</h1>
+
+<p>El texto va a cambiar</p>
+
+<button type="button" onclick="funcionCambio()">Clica!</button>
+
+<p id="texto">Texto que va a cambiar</p>
+
+<script>
+function funcionCambio() { 
+    document.getElementById("texto").innerHTML = "Cambiado con JS";
+}
+</script>
+
+</body>
+</html>
