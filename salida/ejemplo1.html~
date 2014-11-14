@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Salida1</h1>
+
+<p id="aldatu">Aldatu egingo da</p>
+
+<script>
+document.getElementById("aldatua").innerHTML = "Aldatu da";
+</script>
+
+</body>
+</html>

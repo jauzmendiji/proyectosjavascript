@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Salida4</h1>
+<p>Nabegadorearen bidez kontsola deitu ariketa egiteko<p>
+
+<script>
+a = 5;
+b = 6;
+c = a + b;
+console.log(c);
+</script>
+
+</body>
+</html>
