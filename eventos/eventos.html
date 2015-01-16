@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+Id eran duen elementua aldatuko du
+<button onclick="getElementById('eran').innerHTML=Date()">Zer ordu da?</button>
+
+<p id="eran"></p>
+
+Ez bada ezer definitzen elementua bera aldatuko du
+<button onclick="innerHTML=Date()">Zer ordu da?</button>
+
+<p>Normalean, gertakizunak funtzioetan sartzen dira</p>
+
+<button onclick="dataAurkeztu()">Zer ordu da?</button>
+
+<script>
+function dataAurkeztu() {
+    document.getElementById("eran1").innerHTML = Date();
+}
+</script>
+
+<p id="eran1"></p>
+
+</body>
+</html>

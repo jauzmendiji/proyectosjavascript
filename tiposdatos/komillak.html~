@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="komila"></p>
+
+<script>
+var carName1 = "Kaixo";
+var carName2 = 'Kaixo';
+var answer1 = "Komila beste ' komilen artean";
+var answer2 = "Bere izena 'Jon' da";
+var answer3 = 'Bere izena "Jon" da ';
+
+document.getElementById("komila").innerHTML =
+carName1 + "<br>" + 
+carName2 + "<br>" + 
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
+</script>
+
+</body>
+</html>
+

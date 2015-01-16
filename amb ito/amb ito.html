@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Aldagai lokalak funtzioaren barruan bakarrik defini daitezke</p>
+
+<p id="eran"></p>
+<p id="eran1"></p>
+
+<script>
+iFuntzioa();
+document.getElementById("eran").innerHTML =
+"Izena: " + typeof nireIzena;
+
+function iFuntzioa() {
+    var nireIzena = "Jon";
+}
+//Funtzioaren barruan definitutako aldagaiak globalak izango dira:
+var nireAbizena = "Auzmendi";
+aFuntzioa();
+
+function aFuntzioa() {
+    document.getElementById("eran1").innerHTML =
+    "Abizena: " + typeof nireAbizena;
+}
+</script>
+
+</body>
+</html>
+
+

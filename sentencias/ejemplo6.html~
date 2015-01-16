@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Ejemplo 6</h1>
+
+<p> \ batekin bana daitezke lineak</p>
+
+<p id="emen"></p>
+
+<script>
+document.getElementById("emen").innerHTML = "egun \
+    on.";
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Komentarioak</title>
+	</head>
+<body>
+
+<h1>Komentarioak // linea baterako</h1>
+
+//Hau ez da azalduko
+
+<p>Komentarioak /* tik */</p>
+
+/* Ez da azalduko */
+
+</body>
+</html>

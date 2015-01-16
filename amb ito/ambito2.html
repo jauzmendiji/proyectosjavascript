@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Aldagai globalak funtzio guztietarako balio dute</p>
+<p>HTMLen aldagai globalak leiho aldagai bihurtuko dira</p>
+
+<p id="eran"></p>
+<p id="eran1"></p>
+
+
+<script>
+var izena = "Jon";
+iFuntzioa();
+
+function iFuntzioa() {
+    document.getElementById("eran").innerHTML =
+    "Izena " + izena;
+}
+
+aFuntzioa();
+document.getElementById("eran1").innerHTML =
+"Abizena " + window.abizena;
+
+function aFuntzioa() {
+    abizena = "Auzmendi";
+}
+</script>
+
+</body>
+</html>

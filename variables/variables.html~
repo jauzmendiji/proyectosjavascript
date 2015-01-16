@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Aldagaien erabilera</p>
+<p id="aldagaiak"></p>
+<p id="aldagaiak2"></p>
+
+<script>
+
+var x = 5;
+var x = x + 5;
+var y = 6;
+document.getElementById("aldagaiak").innerHTML = x + y;
+
+var pi = 3.14; var izena = "Jon"; var eran = 'Bai!';
+
+document.getElementById("aldagaiak2").innerHTML = izena + eran + pi;
+
+</script>
+
+<p></p>
+
+</body>
+</html>
+

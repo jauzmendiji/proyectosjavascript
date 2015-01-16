@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="dezimalak"></p>
+
+<script>
+var x1 = 34.00;
+var x2 = 34;
+var y1 = 123e5;
+var y2 = 123e-5;
+
+document.getElementById("demo").innerHTML = x1 + "<br>" + x2 + "<br>" + y1 + "<br>" + y2
+</script>
+
+</body>
+</html>
+

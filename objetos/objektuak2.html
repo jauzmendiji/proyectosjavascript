@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Objektuaren barruan, funtzioak definitu daitezke metodo moduan.</p>
+
+<p>Metodo bat, propietate itxura duen funtzioa da.</p>
+
+<p id="eran"></p>
+<p id="eran1"></p>
+
+<script>
+var pertsona = {
+    izena: "Jon",
+    abizena : "Auzmendi",
+    adina   : 21,
+    izenOsoa : function(c) {
+       return this.izena + " " + this.abizena;
+    }
+};
+
+document.getElementById("eran").innerHTML = pertsona.izenOsoa();
+
+document.getElementById("eran1").innerHTML =
+pertsona["izena"] + " " + pertsona["adina"];
+
+</script>
+</body>
+</html>
