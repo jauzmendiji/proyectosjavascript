@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>concat() metodoak stringak konkatenatu ditzazke. "+" erabili ordez ere erabili dezakegu.</p>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+
+<script>
+var text1 = "Jon";
+var text2 = "Auzmendi"
+document.getElementById("eran").innerHTML = text1.concat(" ",text2);
+
+var text3 = "Jon".concat(" ","Auzmendi");
+document.getElementById("eran2").innerHTML = text3;
+</script>
+
+
+</body>
+</html>

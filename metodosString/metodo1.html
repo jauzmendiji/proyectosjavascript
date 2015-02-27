@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="p1">Kaixo, jon naiz. jon noiz aurkitzen den lehen eta azkeneko aldiz aurkeztuko du.</p>
+
+
+<button onclick="Bilatu()">Sakatu</button>
+
+<p id="eran1"></p>
+<p id="eran2"></p>
+
+<script>
+function Bilatu() {
+    var str = document.getElementById("p1").innerHTML;
+    var pos = str.indexOf("jon");
+    document.getElementById("eran1").innerHTML = pos;
+    var pos2= str.lastIndexOf("jon");
+    document.getElementById("eran2").innerHTML = pos2;
+
+}
+
+</script>
+
+</body>
+</html>

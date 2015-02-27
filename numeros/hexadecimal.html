@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>0x aurretik daramaten konstanteak hexadezimal moduan ikusten dira</p>
+
+<button onclick="funtzioa()">Sakatu</button>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+
+<script>
+function funtzioa() {
+    document.getElementById("eran").innerHTML = "0xFF = " + 0xFF;
+    //nahi dugun zenbakia edozein eratara bihurtu dezakegu toString eta zein eratara ezarriz
+    var zenb = 128;
+    document.getElementById("eran2").innerHTML = "128 = " + 
+    zenb + " Decimal, " +
+    zenb.toString(16) + " Hexadecimal, " +
+    zenb.toString(8) + " Octal, " +
+    zenb.toString(2) + " Binary."
+}
+</script>
+
+</body>
+</html>

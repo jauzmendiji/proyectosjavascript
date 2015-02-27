@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Infinito azalduko du, kalkulatu ahal den zenbaki handiena baino haratago bagoaz. Infinity zenbaki moduko mota itzultzen du. typeof()</p>
+
+<button onclick="funtzioa()">Sakatu</button>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+
+<script>
+function funtzioa() {
+    var zenb = 2; 
+    var txt = "";
+    while (zenb != Infinity) {
+        zenb = zenb * zenb;
+        txt = txt + zenb + "<br>";
+    }
+    document.getElementById("eran").innerHTML = txt;
+    //zerorekin zatitutako zenbakian infinito agerarazten du
+       var x = 2/0;
+    var y = -2/0;
+    document.getElementById("eran2").innerHTML = x + "<br>" + y;
+}
+</script>
+
+</body>
+</html>

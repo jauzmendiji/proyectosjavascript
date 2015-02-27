@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="p1">String honen barnean string bat bilatuko du.</p>
+
+
+<button onclick="Bilatu()">Sakatu</button>
+
+<p id="eran1"></p>
+
+<script>
+function Bilatu() {
+    var str = document.getElementById("p1").innerHTML;
+    var pos = str.search("string");
+    document.getElementById("eran1").innerHTML = pos;
+
+}
+
+</script>
+
+</body>
+</html>

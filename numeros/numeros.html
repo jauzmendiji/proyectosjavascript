@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Zenbakiak 15 karaktereraino dira zuzenak</p>
+
+<button onclick="funtzioa()" >Sakatu</button>
+<button onclick="funtzioa1()" >Sakatu</button>
+
+<p id="eran"></p>
+<p id="eran1"></p>
+<p id="eran2"></p>
+<script>
+function funtzioa() {
+	//9999999999999 izango da
+    var x = 999999999999999;
+	//1000000000000 izango da
+    var y = 9999999999999999;
+    document.getElementById("eran").innerHTML = x + "<br>" + y;
+}
+
+function funtzioa1() {
+    var x = 0.2 + 0.1;
+    //17 dezimal onartzen ditu, baina ez da guztiz zuzena izango
+    document.getElementById("eran1").innerHTML = "0.2 + 0.1 = " + x;
+    //guztiz zuzena izateko,biderkatu eta zatitu ohi da.
+     var x = (0.2*10 + 0.1*10) / 10;
+    document.getElementById("eran2").innerHTML = "0.2 + 0.1 = " + x;
+}
+</script>
+
+</body>
+</html>

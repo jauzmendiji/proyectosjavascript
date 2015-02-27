@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>String barneko testua aldatu dezakegu.</p>
+
+<button onclick="aldatu()">Aldatu</button>
+
+<p id="test">Errenteria bixitau</p>
+
+<script>
+
+function aldatu() {
+    var str = document.getElementById("test").innerHTML; 
+    var txt = str.replace("Errenteria","Orereta");
+    document.getElementById("test").innerHTML = txt;
+}
+
+</script>
+
+<p>Stringak maiuskula ta miniskula aldatu ditzazkegu</p>
+
+<button onclick="handi()">Handitu</button>
+
+<p id="izena">jon</p>
+
+<script>
+function handi() {
+    var text = document.getElementById("izena").innerHTML;
+    document.getElementById("izena").innerHTML = text.toUpperCase();
+}
+</script>
+
+<button onclick="txiki()">Txikitu</button>
+
+<p id="abizena">AUZMENDI</p>
+
+<script>
+function txiki() {
+    var text = document.getElementById("abizena").innerHTML;
+    document.getElementById("abizena").innerHTML = text.toLowerCase();
+}
+</script>
+
+
+</body>
+</html>

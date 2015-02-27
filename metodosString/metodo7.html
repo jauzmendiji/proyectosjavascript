@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>String-a banatzen du eta array bihurtzen du nahi dugun posizioaren karakterea itzultzeko.
+Banatzailea "" izan ezkero, stringa itzuliko du karaktere bakoitzean banatua.</p>
+
+<button onclick="strarrayFuntzioa()">Bihurtu</button>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+
+<script>
+function strarrayFuntzioa() {
+    var stringa = "j,o,n,a,u,z";
+    var arraya = stringa.split(",");
+    document.getElementById("eran").innerHTML = arraya[0];
+
+    var stringa2 = "Jonauzmendi";
+	var arraya2 = stringa2.split("");
+	var karaktereak = "";
+	var kont;
+	for (kont = 0; kont < arraya2.length; kont++) {
+    karaktereak += arraya2[kont] + "<br>"
+	}
+	document.getElementById("eran2").innerHTML = karaktereak;
+}
+</script>
+
+</body>
+</html>

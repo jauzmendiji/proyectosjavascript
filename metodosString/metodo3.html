@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Stringak zatitzen slice(). (-12) edo edoizein zenbaki negatibo jarriaz atzetik kontatzen
+hasiko da. Bigarren posizioa kendu ezkero, bukaeraraino zatituko du.</p>
+
+<p id="zatitua"></p>
+
+<script>
+var str = "Jon Auzmendi Jimenez";
+document.getElementById("zatitua").innerHTML = str.slice(7,13);
+</script>
+
+<p>Stringak zaititzen substring(). Ez ditu negatiboak onartzen. </p>
+
+<p id="zatitua2"></p>
+
+<script>
+var str = "Jon Auzmendi Jimenez";
+document.getElementById("zatitua2").innerHTML = str.substring(10,15);
+</script>
+
+<p>Stringak zaititzen substr(). Bigarren posizioa eman beharrean, zein luzera nahi dugun
+adierazten dugu.</p>
+
+<p id="zatitua3"></p>
+
+<script>
+var str = "Jon Auzmendi Jimenez";
+document.getElementById("zatitua3").innerHTML = str.substr(0,3);
+</script>
+
+
+
+</body>
+</html>
