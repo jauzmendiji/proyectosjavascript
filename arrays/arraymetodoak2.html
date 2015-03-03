@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Arrayaren zenbakian goruntz ordenatzeko</p>
+
+<button onclick="ordenatugora()">Ordenatu</button>
+<button onclick="ordenatubera()">Ordenatu</button>
+<button onclick="konkatenatu()">Konkatenatu</button>
+<button onclick="moztu()">Moztu</button>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+<p id="eran3"></p>
+<p id="eran4"></p>
+<p id="eran5"></p>
+
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("eran").innerHTML = points;    
+
+function ordenatugora() {
+    points.sort(function(a, b){return a-b});
+    document.getElementById("eran").innerHTML = points;
+}
+
+function ordenatubera() {
+    points.sort(function(a, b){return b-a});
+    document.getElementById("eran2").innerHTML = points;
+    //Beraz ordenatu ondoren, 0 posizioa handiena edo txikiena ateratzeko erabil dezakegu
+	document.getElementById("eran3").innerHTML = points[0];
+}
+
+function konkatenatu() {
+    var izena = ["Jon"];
+    var abizena = ["Auzmendi"];
+    //hainbat array desberdin konkatena daitezke array.concat(array1,array2,...)
+    var dena = izena.concat(abizena);
+    document.getElementById("eran4").innerHTML = dena;
+}
+
+function moztu() {
+    var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    var citrus = fruits.slice(1,3);
+    document.getElementById("eran5").innerHTML = citrus;
+}
+
+</script>
+
+</body>
+</html>

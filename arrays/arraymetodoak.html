@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The valueOf() method returns an array as a comma separated string.</p>
+<button onclick="atera()">Atera azken elementua</button>
+<button onclick="sartu()">Sartu elementu bat bukaeran</button>
+<button onclick="lehenaatera()">Atera lehen elementua</button>
+<button onclick="lehenasartu()">Sartu lehen elementua</button>
+<button onclick="aldaketa()">Aldatu elementua</button>
+<button onclick="erdiansartu()">Elementuak nahi den tokian sartu</button>
+<button onclick="ordenatu()">Elementuak alfabetikoki ordenatu</button>
+<button onclick="ordenatualdrebes()">Elementuak alfabetikoki ordenatu aldrebes</button>
+
+
+<p id="eran1"></p>
+<p id="eran2"></p>
+<p id="eran3"></p>
+<p id="eran4"></p>
+<p id="eran5"></p>
+<p id="eran6"></p>
+<p id="eran7"></p>
+<p id="eran8"></p>
+
+
+
+<script>//toString-ekin berdina egin daiteke
+//array.join() rekin ere egin daiteke, gainera guk nahi dugun banatzailea erabiliz
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("eran1").innerHTML = fruits.valueOf();
+
+function atera() {
+    fruits.pop()
+    document.getElementById("eran2").innerHTML = fruits;
+}
+function sartu() {
+    fruits.push("Kiwi")
+    document.getElementById("eran2").innerHTML = fruits;
+}
+function lehenaatera() {
+    fruits.shift();
+    document.getElementById("eran3").innerHTML = fruits;
+}
+function lehenasartu() {
+    fruits.unshift("Lemon");
+    document.getElementById("eran3").innerHTML = fruits;
+}
+function aldaketa() {
+    fruits[0] = "Kiwi";//nahi dugun posizioa ezarri
+    document.getElementById("eran4").innerHTML = fruits;
+    //length erabiliz, bukaeran sartu ere egin dezakegu fruits[fruits.length] = "Kiwi";
+}
+function kendu() {
+    delete fruits[0];//nahi dugun posizioa ezarri
+    document.getElementById("eran5").innerHTML = fruits[0];
+    //Baina elementu bat kentzerakoan undefined itzuliko du
+}
+
+function erdiansartu() {
+    fruits.splice(2, 0, "Lemon", "Kiwi");//zein posizioan sartu, zenbat elementu borratu, eta zein elementu sartu adierazten da.
+    document.getElementById("eran6").innerHTML = fruits;
+    //beraz, posizioa eta zenbat elementu borrat adierazi ezkero, borratzeko ere erabil dezakegu
+}
+
+function ordenatu() {
+    fruits.sort();
+    document.getElementById("eran7").innerHTML = fruits;
+}
+
+function ordenatualdrebes() {
+    fruits.sort();
+    fruits.reverse();
+    document.getElementById("eran8").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

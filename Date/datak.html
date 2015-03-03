@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+<p id="eran3"></p>
+<p id="eran4"></p>
+<p id="eran5"></p>
+
+<script>
+//data agertuaraziko du
+var d = Date();
+document.getElementById("eran").innerHTML = Date();
+//aldagai batean sar daiteke
+document.getElementById("eran2").innerHTML = d;
+//objektuaren barruan nahi dugun data ere jarri dezakegu
+var d2 = new Date("October 13, 2014 11:13:00");
+document.getElementById("eran3").innerHTML = d2;
+//7 zenbaki ematen badizkiogu, parametro bakoitzean islatuko dira. Hala ere, hiru bakarrik ere sartu ditzazkegu.
+var d3 = new Date(99,5,24,11,33,30,0);
+document.getElementById("eran4").innerHTML = d3;
+
+/*Objektua egiteko erak
+
+new Date()
+new Date(milliseconds)
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)*/
+
+</script>
+
+</body>
+</html>

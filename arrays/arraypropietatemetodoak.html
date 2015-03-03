@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The length property returns the length of an array.</p>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+<p id="eran3"></p>
+
+<button onclick="gehitu()">Sakatu gehitzeko</button>
+<button onclick="buklea()">Sakatu buklerako</button>
+
+<script>
+//luzera itzuli
+var fruta = ["Banana", "Orange", "Apple", "Mango"];	//honela definitu arrayak, ez new Array() rekin.
+document.getElementById("eran").innerHTML = fruta.length;
+
+function gehitu() {
+    fruits[fruits.length] = "Kiwi";
+    document.getElementById("eran2").innerHTML = fruits;
+}
+
+//Bukleak egiteko array.lenght erabili, noiz bukatzen den jakiteko
+function buklea() {
+    var index;
+    var text = "<ul>";
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    for (index = 0; index < fruits.length; index++) {
+        text += "<li>" + fruits[index] + "</li>";
+    }
+    text += "</ul>";
+    document.getElementById("eran3").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

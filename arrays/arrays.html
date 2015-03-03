@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="eran1"></p>
+<p id="eran2"></p>
+<p id="eran3"></p>
+<p id="eran4"></p>
+
+
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("eran1").innerHTML = cars[0];
+var cars1 = [
+    "Saab",
+    "Volvo",
+    "BMW"
+];
+document.getElementById("eran2").innerHTML = cars1[1];
+
+var cars2 = new Array("Saab", "Volvo", "BMW");
+document.getElementById("eran3").innerHTML = cars2[2];
+//izenekin ere atzitu daitezke elementuak
+var person = {izena:"Jon", abizena:"Auz", adina:22};
+document.getElementById("eran4").innerHTML = person["izena"];
+</script>
+
+</body>
+</html>
+

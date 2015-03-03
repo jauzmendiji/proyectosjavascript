@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Number() converts variables to numbers:</p>
+
+<p id="eran"></p>
+
+<script>
+document.getElementById("eran").innerHTML = 
+    Number(true) + "<br>" +
+    Number(false) + "<br>" +
+    Number(new Date()) + "<br>" +
+    Number("  10") + "<br>" +
+    Number("10  ") + "<br>" +
+    Number("10 6");    
+</script>
+
+<p id="eran2"></p>
+
+<script>
+//lehenengo zenbaki osoa itzultzen du. Stringak aldagai bihurtzen ditu.
+document.getElementById("eran2").innerHTML = 
+    parseInt("10") + "<br>" +
+    parseInt("10.33") + "<br>" +
+    parseInt("10 6") + "<br>" +    
+    parseInt("10 years") + "<br>" +    
+    parseInt("years 10");    
+</script>
+
+<p id="eran3"></p>
+
+<script>
+//Lehen zenbakia itzultzen du. Stringak aldagai bihurtzen ditu.s
+document.getElementById("eran3").innerHTML = 
+    parseFloat("10") + "<br>" +
+    parseFloat("10.33") + "<br>" +
+    parseFloat("10 6") + "<br>" +    
+    parseFloat("10 years") + "<br>" +
+    parseFloat("years 10");        
+</script>
+
+
+</body>
+</html>

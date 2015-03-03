@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+<p id="eran3"></p>
+
+<script>
+//string moduan itzuliko dugu data, berdin berdina da.
+var d = new Date();
+document.getElementById("eran").innerHTML = d.toString();
+document.getElementById("eran2").innerHTML = d.toUTCString();
+//Irakurgarriena
+document.getElementById("eran3").innerHTML = d.toDateString();
+</script>
+
+</body>
+</html>

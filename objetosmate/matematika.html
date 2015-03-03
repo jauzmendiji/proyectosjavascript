@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Math.random() returns a random number betwween 0 and 1.Bi zenbaki adieraz daitezke</p>
+
+<button onclick="funtzioa()">Try it</button>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+<p id="eran3"></p>
+<p id="eran4"></p>
+<p id="eran5"></p>
+<p id="eran6"></p>
+<p id="eran7"></p>
+<p id="eran3"></p>
+<p id="eran4"></p>
+<p id="eran5"></p>
+
+<script>
+function funtzioa() {
+    document.getElementById("eran").innerHTML = Math.random();
+    //Max eta min, lista bateko maximoa eta minimoa
+    document.getElementById("eran2").innerHTML =
+    Math.min(0, 150, 30, 20, -8);
+    document.getElementById("eran3").innerHTML =
+    Math.max(0, 150, 30, 20, -8);
+    //Math.round, zenbakia borobiltzen du urbilenera
+    document.getElementById("eran4").innerHTML = Math.round(4.4);
+    //Math.ceil gorenera, eta math floor berenera
+    document.getElementById("eran5").innerHTML = Math.ceil(4.4);
+    document.getElementById("eran6").innerHTML = Math.floor(4.4);
+    //random eta round batera erabil daitezke
+    document.getElementById("eran7").innerHTML =
+    Math.floor(Math.random() * 10);
+}
+/*Beste metodoak
+
+abs(x)  Returns the absolute value of x
+acos(x) Returns the arccosine of x, in radians
+asin(x) Returns the arcsine of x, in radians
+atan(x) Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+atan2(y,x)  Returns the arctangent of the quotient of its arguments
+ceil(x) Returns x, rounded upwards to the nearest integer
+cos(x)  Returns the cosine of x (x is in radians)
+exp(x)  Returns the value of Ex
+floor(x)    Returns x, rounded downwards to the nearest integer
+log(x)  Returns the natural logarithm (base E) of x
+max(x,y,z,...,n)    Returns the number with the highest value
+min(x,y,z,...,n)    Returns the number with the lowest value
+pow(x,y)    Returns the value of x to the power of y
+random()    Returns a random number between 0 and 1
+round(x)    Rounds x to the nearest integer
+sin(x)  Returns the sine of x (x is in radians)
+sqrt(x) Returns the square root of x
+tan(x)  Returns the tangent of an angle
+
+*/
+</script>
+
+</body>
+</html>

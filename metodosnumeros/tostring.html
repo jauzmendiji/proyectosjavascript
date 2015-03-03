@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Zenbakiak era desberdinetan adierazteko metodoak</p>
+
+<p id="eran"></p>
+<p id="eran2"></p>
+<p id="eran3"></p>
+<p id="eran4"></p>
+
+<script>
+/*BESTE METODOAK
+
+Number()	Returns a number, converted from its argument.
+parseFloat()	Parses its argument and returns a floating point number
+parseInt()	Parses its argument and returns an integer
+
+toString()	Returns a number as a string
+toExponential()	Returns a string, with a number rounded and written using exponential notation.
+toFixed()	Returns a string, with a number rounded and written with a specified number of decimals.
+toPrecision()	Returns a string, with a number written with a specified length
+valueOf()	Returns a number as a number
+
+
+*/
+var x = 123;
+document.getElementById("eran").innerHTML =
+    x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString(); 
+
+ var y= 9.656;
+document.getElementById("eran2").innerHTML =
+    y.toExponential() + "<br>" + 
+    y.toExponential(2) + "<br>" + 
+    y.toExponential(4) + "<br>" + 
+    y.toExponential(6);
+
+var z = 9.656;
+document.getElementById("eran3").innerHTML =
+    z.toFixed(0) + "<br>" +
+    z.toFixed(2) + "<br>" +
+    z.toFixed(4) + "<br>" +
+    z.toFixed(6);
+
+var c = 9.656;
+document.getElementById("eran4").innerHTML = 
+    c.toPrecision() + "<br>" +
+    c.toPrecision(2) + "<br>" +
+    c.toPrecision(4) + "<br>" +
+    c.toPrecision(6);  
+
+</script>
+
+</body>
+</html>
